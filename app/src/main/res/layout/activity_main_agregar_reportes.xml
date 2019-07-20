@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reportes.MainActivityAgregarReportes">
+
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="594dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            app:srcCompat="@drawable/reportes" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/banos" />
+
+
+            <Button
+                android:id="@+id/ButtonTomarFoto"
+                android:layout_width="300dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="#4E8AB2  "
+                android:text="Tomar Foto" />
+            <Button
+                android:id="@+id/ButtonSubirFoto"
+                android:layout_width="300dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="#4E8AB2  "
+                android:text="Subir foto"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/TituloReporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Titulo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/DescripcionReporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Descripcion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/FechaReporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Fecha yy-mm-dd"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/ButtonAgregarReporte"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="#4E8AB2  "
+            android:text="Agregar reporte" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
